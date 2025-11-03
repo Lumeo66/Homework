@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3212315907.js" crossorigin="anonymous"></script>
+    <title>Frontend Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid #000;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 3px solid #000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .logo-box {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            border-radius: 4px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 30px;
+            border-bottom: 3px solid #000;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .hero p {
+            color: #888;
+            font-size: 16px;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 3px solid #000;
+        }
+
+        .section {
+            padding: 30px;
+            border-right: 3px solid #000;
+        }
+
+        .section:last-child {
+            border-right: none;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        /* Projects Section */
+        .project-item {
+            padding: 12px 15px;
+            border: 2px solid #000;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Work Experience Section */
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .job-description {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .profile-link {
+            color: #0066cc;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .profile-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Education Section */
+        .education-intro {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .courses-heading {
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .course-list {
+            line-height: 1.8;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 40px 30px;
+            border-bottom: 3px solid #000;
+        }
+
+        .reviews h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .review-card {
+            border: 3px solid #000;
+            border-radius: 25px;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .review-text {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .reviewer-title {
+            color: #ccc;
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+    
+        @media (max-width: 968px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                border-right: none;
+                border-bottom: 3px solid #000;
+            }
+
+            .section:last-child {
+                border-bottom: none;
+            }
+
+            .reviews-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 15px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                
+                <span>Seung Seyha</span>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#articles">Articles</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Frontend Developer</h1>
+        </section>
+
+        <div class="content-grid">
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="project-item">HTML Only Portfolio</div>
+                <div class="project-item">Calculator</div>
+                <div class="project-item">Quiz App</div>
+                <div class="project-item">Countdown Timer</div>
+                <div class="project-item">Product Upcoming Page</div>
+            </div>
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="job-title">roadmap.sh</div>
+                <div class="job-description">Solved all the frontend projects</div>
+                <a href="profile.html" class="profile-link">Visit my Profile</a>
+
+                <div class="job-title">OpenSource Work</div>
+                <div class="job-description">Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</div>
+                <a href="https://github.com/Lumeo66" class="profile-link">Visit my GitHub Profile</a>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education-intro">
+                    2023-Present Study at Royal University Of Phnom Penh Third years.
+                </div>
+                <div class="courses-heading">Courses I took:</div>
+                <div class="course-list">
+                    - Object Oriented Programming<br>
+                    - Data Structures and Algorithms<br>
+                    - Web Engineering<br>
+                    - Artificial Intelligence<br>
+                    - Network<br>
+                    - Computer Graphics<br>
+                    - Database Management Systems<br>
+                    - Database Systems<br>
+                    - ISAD
+                    
+                </div>
+            </div>
+        </div>
+
+        <section class="reviews">
+            <h2>Reviews from my Teachers</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-text">
+                        Seung Seyha was a brilliant student; always stood out with his assignments.
+                    </div>
+                    <div class="reviewer-name">Seung Seyha</div>
+                    <div class="reviewer-title">Assistant Professor</div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer>
+            © all rights reserved 2025
+        </footer>
+    </div>
+</body>
+</html>

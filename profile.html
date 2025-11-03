@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seung Seyha - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .left-column {
+            background: linear-gradient(to bottom, #8B6F47 120px, #2c2c2c 120px);
+            color: white;
+            padding: 20px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #1e90ff;
+            margin-bottom: 15px;
+        }
+
+        .profile-section h2 {
+            font-size: 16px;
+            margin-top: 10px;
+            background: #8B6F47;
+            padding: 8px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .about-text {
+            font-size: 12px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .section-title {
+            background: #8B6F47;
+            padding: 8px;
+            margin: 20px -20px 15px -20px;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 110px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .contact-item::before {
+            content: "●";
+            margin-right: 8px;
+        }
+
+        .section-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .section-list li {
+            margin-bottom: 8px;
+            font-size: 12px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .section-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .right-column {
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(to right, white 60%, #e0e0e0 60%);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        .right-section-title {
+            background: #A0826D;
+            color: white;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .content-section {
+            padding: 20px 30px;
+        }
+
+        .content-section h3 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .content-section ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .content-section li {
+            margin-bottom: 6px;
+            font-size: 12px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .content-section li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .year {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subsection {
+            margin-bottom: 15px;
+        }
+
+        .reference-item {
+            margin-bottom: 15px;
+        }
+
+        .reference-name {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .reference-title {
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-section">
+                <img src="/img/photo_2024-05-06_11-26-08.jpg" width='120' height='120'%3E%3Crect fill='%231e90ff' width='120' height='120' rx='60'/%3E%3C/svg%3E" alt="Profile Picture" class="profile-img">
+                <h2>About Me</h2>
+            </div>
+
+            <p class="about-text">
+                I am a third-year Computer Science student with a passion for coding and content creation. I have skills in programming, MMO, and digital content development, and I am eager to apply my knowledge while continuing to grow professionally.
+            </p>
+
+            <div class="section-title">PERSONAL INFORMATION</div>
+            <div class="info-item"><span class="info-label">Sex:</span> Male</div>
+            <div class="info-item"><span class="info-label">DOB:</span> 1 September 2005</div>
+            <div class="info-item"><span class="info-label">POB:</span> Toulkork District, Phnom Penh</div>
+            <div class="info-item"><span class="info-label">Nationality:</span> Cambodian</div>
+            <div class="info-item"><span class="info-label">Material Status:</span> Single</div>
+
+            <div class="section-title">CONTACT</div>
+            <div class="contact-item">097 99 20 171</div>
+            <div class="contact-item">seyhaha3262@gmail.com</div>
+            <div class="contact-item">St.Lum, # 775, SangkatHoeng Tompon, Khan Mean Chey, Phnom Penh</div>
+
+            <div class="section-title">LANGUAGES</div>
+            <ul class="section-list">
+                <li>Khmer (Mother Tongue)</li>
+                <li>English (Medium)</li>
+            </ul>
+
+            <div class="section-title">OTHERS SKILL</div>
+            <ul class="section-list">
+                <li><strong>Soft Skills</strong>
+                    <div style="margin-top: 5px; font-size: 11px;">
+                        Speaking and writing clearly, active listening<br>
+                        -Working well with others, being cooperative<br>
+                        -Finding solutions creatively and logically<br>
+                        -Adjusting to change easily and positively<br>
+                        -Organizing tasks and meeting deadlines
+                    </div>
+                </li>
+                <li style="margin-top: 10px;"><strong>Hard Skills</strong>
+                    <div style="margin-top: 5px; font-size: 11px;">
+                        -Basic Computer Skills<br>
+                        -MS Office (Word, Excel, Power Point)<br>
+                        -Video Editing(Davinci, Capcut, VN, Filmora)<br>
+                        -Artificial Intelligence (ChatGPT)<br>
+                        -AI Video(Haiku,Yen3,Runway,Sora)
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <div class="header">
+                <div class="name">SEUNG<br>SEYHA</div>
+            </div>
+
+            <div class="right-section-title">SHORTCOURSES</div>
+            <div class="content-section">
+                <div class="subsection">
+                    <div class="year">• 2023-2024</div>
+                    <div>Learning Course MMO (Facebook,Website)</div>
+                </div>
+                <div class="subsection">
+                    <div class="year">• 2023-2024</div>
+                    <div>Learning Course Make Video AI</div>
+                </div>
+            </div>
+
+            <div class="right-section-title">WORK EXPERIENCES</div>
+            <div class="content-section">
+                <h3>MMO(2023-2024)</h3>
+                <ul>
+                    <li>Creating Page</li>
+                    <li>Secturing Page</li>
+                    <li>Reporting Page</li>
+                </ul>
+                <h3 style="margin-top: 15px;">Content Creator(2023-2025)</h3>
+                <ul>
+                    <li>Vlogging</li>
+                    <li>Entertaining</li>
+                    <li>Challenge</li>
+                </ul>
+            </div>
+
+            <div class="right-section-title">EDUCATION</div>
+            <div class="content-section">
+                <div class="subsection">
+                    <div class="year">• 2023-Present</div>
+                    <div>Royal University Of Phnom Penh</div>
+                    <div>Bachelor of Computer Science and Engineering</div>
+                </div>
+                <div class="subsection">
+                    <div class="year">• 2022-2023</div>
+                    <div>Asian International School</div>
+                    <div>Level-Focus-Three</div>
+                </div>
+            </div>
+
+            <div class="right-section-title">INTEREST</div>
+            <div class="content-section">
+                <ul>
+                    <li>Playing football and team sports</li>
+                    <li>Reading tech blogs and self-improvement books</li>
+                    <li>Listening to music</li>
+                    <li>Shooting videos and creating content</li>
+                    <li>Traveling and exploring new places</li>
+                </ul>
+            </div>
+
+            <div class="right-section-title">REFERENCES</div>
+            <div class="content-section">
+                <div class="reference-item">
+                    <div class="reference-name">Mr.Horn Bonny</div>
+                    <div class="reference-title">Managing and Operation Superviser</div>
+                    <div class="contact-item">078 333 186</div>
+                    <div class="contact-item">bonnyhorn9@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
